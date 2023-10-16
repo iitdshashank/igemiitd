@@ -1,0 +1,75 @@
+{% set ref = 'no' %}
+{% extends "layout.html" %}
+  
+{% block title %}Contributions to future iGEM teams{% endblock %}
+{% block lead %} iGEM-IIT-Delhi contributions {% endblock %}
+
+
+
+{% block page_content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part Information</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+  </head>
+
+<body>
+    <h2>New parts contributed (wet lab)</h2>
+    <table>
+        <tr>
+          <th>Part name (composite)</th>
+          <th>Code</th>
+          <th>Part description</th>
+        </tr>
+        <tr>
+          <td>Inducible dual promoter system</td>
+          <td><a href="http://parts.igem.org/Part:BBa_K4898000">BBa_K4898000</a></td>
+          <td>This contains two strong inducible promoters, Ptac which is induced by IPTG and Ptet which is induced by Doxycycline, this system can have multiple applications from acting as a kill switch to being useful in protein engineering.</td>
+        </tr>
+        <tr>
+          <td>Alasan biosurfactant producing gene AlnA under strong inducible promoter Ptac</td>
+          <td><a href="http://parts.igem.org/Part:BBa_K4898001">BBa_K4898001</a></td>
+          <td>Ptac is induced using IPTG to produce alasan. The specialty of this part is that even a cloning strain like DH5-alpha is able to express the compound with high yields due to the high strength of the promoter. The strain was able to produce a more concentrated solution of the biosurfactant with merely overnight incubation in 37 degrees Celsius than the wild-type strain after 7-day incubation.</td>
+        </tr>
+        <tr>
+          <td>AlnA gene incorporated under T7 promoter</td>
+          <td><a href="http://parts.igem.org/Part:BBa_K4898002">BBa_K4898002</a></td>
+          <td>Alasan cloned under T7 promoter in DH5-alpha for easy blue-white screening of transformed clones.</td>
+        </tr>
+        <tr>
+          <td>Inducible dual promoter system to produce AlnA under Ptac and rhlAB under Ptet</td>
+          <td><a href="http://parts.igem.org/Part:BBa_K4898003">BBa_K4898003</a></td>
+          <td>Alasan and Rhamnolipid are important biosurfactants used in multiple industries. Producing these biosurfactants in a certain composition becomes essential, as producing them in different organisms would require multiple reactors and purification units, increasing production costs. Wild-type strains are also pathogenic. Producing these biosurfactants in one organism allows for cost reduction.</td>
+        </tr>
+      </table>
+
+
+    <h2>Dry lab</h2>   
+    We are among the very few teams (or probably the first one) who have performed an MD simulation for micelle formation.
+    <h3>Model 1</h3> 
+    <p>This is a study which has been done for the very first time where molecular dynamic simulation showing the chelation of Cu+2 ions by biosurfactant was done, as seen in the video and a stable RMSD value(see dry lab page), we observe that the micelles are formed around the Cu2+ ions hence confirming the hypothesis that the biosurfactant chelates the ions. These ions will then be extracted by reverse micelle extraction process.</p>
+    <h3>Model 2</h3>
+    <p>RMSD and the box video look promising which proves that in-silico test for chelation of oil molecules is successful.</p>
+    <h2>Mathematical modeling</h2>
+    <p>Inducer,  P_on and P_off concentration saturates to 0.63 au in around 20000 au time duration itself. Further, a delayed saturation time is observed for the production of mRNA (which is triggered by P_on) at a time of 50000 au. The biosurfactant produced is triggered by the production of mRNA and reaches its saturation value in around 100000 au of time. The model that we propose, qualitatively matches the real world observations hence the circuit/model is consistent. [Note : saturation refers to around 90% of the conc at t = infinite]</p>
+      <h3>Measurements</h3>
+      <p>Characterized the biosurfactants by performing, oil drop assay, emulsification index assay, thin layer chromatography, Fourier Transform Infrared Spectroscopy and ICP-OES, contact angle analysis, for the detailed results and data visit the Results page.</p>
+</body>
+
+
+{% endblock %}

@@ -1,0 +1,109 @@
+  <!-- =======================================================
+  * Template Name: HeroBiz - v2.2.0
+  * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <!-- ======= Header ======= -->
+  
+
+
+   </style>
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+
+      <nav id="navbar" class="navbar ">
+        
+        
+        <ul> 
+          <li><a class="nav-link scrollto scrolled" href="{{ url_for('pages', page='index') }}">Home</a></li>
+
+          <li class="dropdown"><a class="scrolled" href="#"><span>Team</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a class="scrolled" href="{{ url_for('pages', page='team') }}">Team Members</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
+              <!-- <li><a class="scrolled" href="{{ url_for('pages', page='gallery') }}">Gallery</a></li> -->
+            </ul>
+          </li> 
+
+          <li class="dropdown"><a class="scrolled" href="#">Project<i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a class="scrolled" href="{{ url_for('pages', page='description') }}">Description</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
+              <!-- <li><a class="scrolled" href="{{ url_for('pages', page='model') }}">Model</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='measurement') }}">Measurement</a></li>            
+              <li><a class="scrolled" href="{{ url_for('pages', page='engineering') }}">Engineering Success</a></li> -->
+              <li><a class="scrolled" href="{{ url_for('pages', page='implementation') }}">Implementation</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='judging') }}">Judging Form</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="scrolled" href="#"><span>Lab</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a class="scrolled" href="{{ url_for('pages', page='results') }}">Results</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='parts') }}">Parts</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="scrolled" href="#"><span>Dry lab</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a class="scrolled" href="{{ url_for('pages', page='model') }}">Dry lab</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="scrolled" href="#"><span>Human Practices</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a class="scrolled" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='sustainability') }}">Sustainability</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='survey') }}">Survey</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='press') }}">Safety</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='partnership') }}">Partnership</a></li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="scrolled" href="#"><span>Education</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a class="scrolled" href="{{ url_for('pages', page='education') }}">Education</a></li>
+            </ul>
+          </li>
+
+          
+<!-- 
+          <li class="dropdown"><a class="scrolled" href="#"><span>Grand Jamboree</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a class="scrolled" href="{{ url_for('pages', page='awards') }}">Awards & Medals</a></li>
+              <li><a class="scrolled" href="{{ url_for('pages', page='presentation') }}">Presentation</a></li>
+            </ul> -->
+          <!-- </li>  -->
+
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle d-none"></i>
+
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script>AOS.init();</script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+  

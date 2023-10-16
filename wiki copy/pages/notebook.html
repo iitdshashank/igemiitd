@@ -1,0 +1,358 @@
+{% set ref = 'no' %}
+
+{% extends "layout.html" %}
+  
+{% block title %}Notebook{% endblock %}
+{% block lead %}This is our notebook of the whole project, in it you can find the progress we made each week from the initial brainstorming sessions, and up to the last stages. {% endblock %}
+
+{% block page_content %}
+
+<link href="{{ url_for('static', filename='assets/css/fontawesome/css/all.css') }}" rel="stylesheet" />
+
+<!-- January -->
+
+<style type="text/css">
+    .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+    
+    .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+    
+    .tg .tg-0lax {
+        text-align:center !important;
+        vertical-align: top
+    }
+    .tg-0lax .MathJax {font-size: 1.3em !important; }
+    </style>
+
+<div class="col-md-offset-6 col-md-12">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading1">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Week 1
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+                    <div class="panel-body">
+                        <p>The idea of the project, now called “Remedix” was discussed in the first week. Most of us were very new to the day-to-day working of an actual lab, and the transition from reading about it in books and papers to actually coming to work in a laboratory set up every day took a while to get used to. The first week we spent on getting well-versed with rather basic things like where the chemicals and equipment are located, and safety protocols to be followed. </p>
+                      
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading11">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                            Week 2
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                    <div class="panel-body">
+                        <p>Week 2 was spent learning basic microbiological techniques, preparation of enriched and minimal media for the growth of bacteria, sterilization techniques that are followed in the lab like how to safely operate the autoclave, streaking to obtain pure single colonies, maintenance of pure cultures, inoculations, making stocks of antibiotic solutions, filter sterilization..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading21">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                            Week 3
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading21">
+                    <div class="panel-body">
+                        <p>
+                          We trained in basic molecular biological techniques like plasmid isolation, restriction enzyme digestion, learning to operate softwares to analyze a given DNA sequence which later helped us in designing unique and simple cloning strategies.  We learnt how to set up Polymerase Chain Reactions (PCR) and extraction and purification of DNA from agarose gels. We learnt how to analyze different sizes of DNA on varying percentages of agarose gels, as well as learnt how to prepare different polyacrylamide gels to analyze protein samples of different sizes. We appreciated the fact that by changing the resolving gel percentage, we can visualize a lot of proteins across a wide range of molecular weights. Keeping the ultimate goal of driving our project, we placed the order for Bacillus licheniformis ATCC14580, as well as the primers needed to clone lichenysin.
+                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading31">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse31" aria-expanded="false" aria-controls="collapse31">
+                            Week 4
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse31" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading31">
+                    <div class="panel-body">
+                        <p>We retrieved and revived glycerol stocks for the plasmids that we needed to clone lichenysin in, a plasmid called pSIM7 (of the recombineering plasmid tools, pSIM series (5676bp). We revived it by using chloramphenicol plates and media and we isolated the plasmid using the manual method described by Sambrook et al. It is a low copy number plasmid so the yield that we obtained for the first few times was very low. We had to repeat it thrice to get a good enough concentration to perform restriction enzyme digestion using SmaI and BglII for 1816 bp release. Following that, we had to optimize the amount of enzyme to use for this, depending on the concentration of the plasmid. We also performed gel extraction to obtain the linearized and digested plasmid, which we later would use as a vector to clone lichenysin..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading32">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse32" aria-expanded="false" aria-controls="collapse32">
+                            Week 5
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse32" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading32">
+                    <div class="panel-body">
+                        <p>We finally obtained Bacillus licheniformis ATCC14580 in a lyophilized form which we had to revive with UTMOST care and following stringent sterilization techniques. We noted the colony morphology, the time of growth. We performed colony PCR for the gene, lichenysin, from a freshly streaked B. licheniformis plate, with a long range polymerase, but we could not see any amplification of the desired size. So we tried putting the PCR again with the annealing temperatures across a wide range. This also did not yield any positive amplification corresponding to the desired size. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- February -->
+
+
+
+<div class="col-md-offset-6 col-md-12">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                            Week 6
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2">
+                    <div class="panel-body">
+                    
+                        <p>We planned and mapped out a different strategy to clone two different biosurfactants under two different promoters. We conducted an extremely exhaustive literature search to find suitable biosurfactants of two different compositions. We also looked into inducible, tightly regulated promoters so that we could produce a novel tunable system of biosurfactants. We finally narrowed it down to two biosurfactants, Alasan from Acinetobacter sp. and Rhamnolipid from Pseudomonas sp. to be cloned under the tac promoter and the tet promoter respectively. A detailed literature review was penned down elucidating why we chose these particular ones to work with. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading12">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                            Week 7
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                    <div class="panel-body">
+                    
+                        <p>To fasten up the process, instead of ordering the strains, we ordered the gene fragments for Alasan, aln, and rhamnolipid, rhlAB from iGEM sponsor IDT as well as designed and ordered primers to clone them in a plasmid system which already had the tac promoter cloned in between BglII and NdeI sites, called pTAC. We also obtained the plasmid construct having the gene fragment for Ptet to have everything ready in our hands before we dive into exhaustive cloning. Simultaneously, we also started screening the biosurfactants that are produced by other well known reported strains, like Pseudomonas sp., Franconibacter sp., Leifsonia sp., as well as Bacillus licheniformis. We performed EI assays, Oil displacement assays with cell free supernatant first. After that, we performed extraction of the biosurfactant by first doing lipid precipitation by HCl, and then extracting with methanol and chloroform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading22">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                            Week 8
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
+                    <div class="panel-body">
+                
+                        <p>We put our first test runs of the PCR reactions for Ptet, aln and rhlAB genes. Fortunately, we got desired amplification for all the inserts on the first go. We then proceeded to perform overnight digestion of these PCR purified products to have our inserts ready for setting up the ligation. During this week, we also decided to start optimizing the reaction conditions to prepare our three successive vectors for performing our three-step cloning. The restriction enzymes we were planning to use are NdeI, HindIII for cloning aln, BglII and SphI for cloning Ptet, and XbaI and SphI were cloning rhlAB. NdeI and HindII were relatively easier to optimize and we got a clean, single double digested vector in our second attempt with good yield even after gel extraction.
+
+                          Fig 7. PCR amplified alasan (aln 1078 bp), 1kb ladder, Ptet (156 bp), rhlAB (700 bp) (left to right)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading33">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                            Week 9
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse33" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading33">
+                    <div class="panel-body">
+                       
+                        <p>The troublemakers were the others, SphI and BglII. These enzymes are not compatible in the same buffer, and the release expected out of a double digestion of the plasmid, pTAC with these enzymes is only around 196bp, which was incredibly difficult to detect on the 1% agarose gel that we use normally. So, meticulously performing sequential digestion was our only choice. We first tried to linearize the plasmid with BglII, and then purify the linear band and use this elute to set an SphI enzyme digestion. After three attempts where we could not produce the desired results, we read on expert websites that we need to use the enzyme which needs a buffer with lesser ionic strength as that of the other enzyme. SphI was that enzyme for this set, so we wasted no time in setting up the digestion with SphI at first, making sure it gets linearized. We then performed PCR purification of the linear band on which BglII was added, after waiting for sufficient time a faint, diffused release of around 200bp was obtained. The final vector which we made required 2 more attempts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- March -->
+
+
+
+<div class="col-md-offset-6 col-md-12">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            Week 10
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3">
+                    <div class="panel-body">
+                        <p>The 10th week, we set up our first ligation reaction to clone Alasan, aln, with our vector, pTAC digested with NdeI and HindIII. We used 1:3 molar ratios of vector: insert and used T4 DNA ligase, following transformation into freshly prepared chemically competent cells of E. coli DH5α. The next day we performed colony PCR to check the presence of recombinants in the cells, and we found two of them were positive for the clone. We inoculated these two colonies to perform plasmid isolation the next day and to perform a PCR against the gene aln with the plasmids as well as confirm the clones by restriction digestion. However, we failed to see desired amplification for aln and the insert released after the restriction digestion of these plasmids were also of the wrong size. We set up ligation for alasan, aln two more times using various other vector preparations and various other molar ratios of inserts and vectors but we failed to get a clone all these times.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading13">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                            Week 11
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                    <div class="panel-body">
+                        <p>Since we were struggling with the cloning for alasan, we decided to start attempting to clone Ptet. We got that clone in two attempts and confirmed the clone by plasmid PCR and digestion by XbaI (a non-cutter we included in our primer sequence). Simultaneously, from our troubleshooting sessions with our mentor, Prof. Preeti Srivastava, we hypothesized that probably our aln insert is not getting properly digested due to which it is hindering the process of efficient ligation. We then decided to perform ligation of our Taq polymerase amplified insert aln as well as rhlAB pGEM®-T Easy Vector, and perform a rapid ligation. The next day we screened our recombinants using blue white screening, wherein we selected the white colonies to proceed for plasmid isolation and restriction digestion. The digested inserts were then used for ligation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading23">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                            Week 12
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
+                    <div class="panel-body">
+                      
+                        <p>On our 4th attempt at ligation with our previously prepared insert, we got the clone for alasan. We checked its expression in whole cell lysate, sonicated pellet and sonicated supernatant (to check if the protein is being able to be properly folded; hence solubilized) on a 12% SDS-PAGE. We then immediately proceeded to do preliminary biosurfactant assays with different types of oils, like the emulsification index, to confirm the presence of alasan. After these assays gave us positive results, we extracted the biosurfactant and prepared its crude extract. To solubilize alasan, we checked various solvents and then observed the best solvent was deionized water. To validate our recombinant biosurfactant, we ran a simple qualitative analysis to determine its components on Thin Layer Chromatography, which gave us indication of proteinaceous and polysaccharide moieties in Alasan, which completely correlated to what we had previously read in literature. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading34">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse34" aria-expanded="false" aria-controls="collapse34">
+                            Week 13
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse34" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading34">
+                    <div class="panel-body">
+                        
+                        <p>Now that a preliminary TLC has been conducted which already validated our recombinantly produced alasan, we went further in this path to throw light on the functional groups that can be detected in the biosurfactant through Fourier Transform- Infrared Spectroscopy. The transmittance vs. wavenumber spectra helped us to assign peaks corresponding mainly to primary and secondary amines, on C=O bonds and also alcohol and carboxylic acid bonds. This further correlated to what we know of alasan to be of proteinaceous and polysaccharide in nature. </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- April -->
+
+
+
+<div class="col-md-offset-6 col-md-12">
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading35">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse35" aria-expanded="true" aria-controls="collapse35">
+                            Week 14
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse35" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading35">
+                    <div class="panel-body">
+                        <p>On the Ptet-rhlAB cloning front of our work, we attempted three trials of ligation to clone rhlAB downstream to Ptet. After it failed multiple times, we again hypothesized that the insert and the vector might not be getting properly digested, so we incubated them with the enzymes for a longer period of time to get another set of purified inserts and vectors for ligation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading14">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                            Week 15
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                    <div class="panel-body">
+                        <p>On the Ptet-rhlAB cloning front of our work, we attempted three trials of ligation to clone rhlAB downstream to Ptet. After it failed multiple times, we again hypothesized that the insert and the vector might not be getting properly digested, so we incubated them with the enzymes for a longer period of time to get another set of purified inserts and vectors for ligation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading24">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                            Week 16
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading24">
+                    <div class="panel-body">
+                        
+                        <p>We had read a plethora of research as well as review articles on many peer reviewed journals where scientists have documented and demonstrated that biosurfactants have the incredible ability to trap, or “cage” heavy metals, like lead, cadmium, copper, nickel, chromium etc. Now that we had our hands on the extracted alasan biosurfactant, we wanted to see how active it is to trap some heavy metals that are reported to be notorious for ecological welfare. We performed ICP-OES (Inductively coupled plasma- Optical EMission Spectroscopy) with appropriate controls with metals like lead, copper, cadmium, chromium, and nickel to see if the recombinantly expressed alasan is being able to cater to this particular need. To the best  of our knowledge, the action of alasan on heavy metals such as these have actually not been reported in the community. We then held two sessions with our investigator, Prof. Preeti Srivastava who guided us with a proper experimental set up to test our hypothesis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading36">
+                    <h3 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse36" aria-expanded="false" aria-controls="collapse36">
+                            Week 17
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapse36" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading36">
+                    <div class="panel-body">
+                        
+                        <p>After conducting ICP-OES, we tabulated our findings.we also started compiling our results. We also tried genomic DNA amplification of Bacillus licheniformis with success. We will be attempting to brain the gene for lichenysin by PCR again, to clone in our already prepared pSIM7 vector.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+{% endblock %}
