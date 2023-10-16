@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://github.com/iitdshashank/igem/blob/main/des1.jpeg?raw=true"/>
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
+
+    <script src="{{ url_for('static', filename='assets/js/index/jquery-3.6.1.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='assets/js/index/slick.js') }}"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+
+    <title>IIT Delhi-iGEM</title>
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+
+
+    <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+    <link href="{{ url_for('static', filename='assets/css/variables.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'assets/css/variables-purple.css') }}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static', filename='assets/css/main.css') }}" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="130">
+
+  <!-- Navigation -->
+  {% include 'menu.html' %}
+
+  {% block page_body %}{% endblock %}
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+
+{% include 'footer.html' %}
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+  
+{% block title %}Safety{% endblock %}
+{% block lead %}The safety of our team members has been, and will always be the top priority. Thus, appropriate measures were taken when working in the lab, and here we present the different procedures taken to ensure a safe and secure project.  {% endblock %}
+
+{% block page_content %}
+
+
+
+
+<div class="row mt-4">
+  <div class="col">
+      <h2>Opening</h2>
+      <hr>
+      <p>Our team made sure to take safety measures before we started the wet work. We understand that we must follow regulations and protocols as the intended use for our metabolite will be having it coming into contact with people. Moreover, we understood that biomanufacturing carries its risks as we use microorganisms and chemicals.</div>
+     
+    
+
+</div>
+
+<div class="row mt-4">
+  <div class="col">
+    <h2>Lab procedures</h2>
+    <hr>
+    <p>All wet lab work was performed according to known protocols, vetted by our mentors and supervisors. All materials used were either on the whitelist or were approved by iGEM. At the beginning of our work, we were instructed about proper lab habits and were introduced to the safety measures that are present in the lab including safety showers, eye washing stations, and fire extinguishers. We were informed about fire alarms, emergency numbers, and the location of the gas valve. Lab members were working in pairs during the entire span of our project. We were briefed about every protocol before performing it. Before handling a chemical (like EtBr, chloroform, acetonitrile, decursin, decursinol, umbelliferone, (7-demethylsuberosin) we made sure to read its MSDS.</p>
+       <p>We worked with biosafety level 1 organisms - <I>E. coli</I> TOP 10, <I>E. coli</I> BL21, CHO cells, and HaCat cells<sup>[<a href="#ref1">1</a>]</sup>]<sup>[<a href="#ref2">2</a>]</sup>]<sup>. We also took protective measures – wore gloves, closed-toe shoes, long pants, and lab coats and always cleaned our benches at the start and the end of every protocol. Before starting the work with TNF-alpha, we got specific safety instructions and were guided by a researcher in our institute who works with TNF-alpha. </p>
+       <p> The creation of our metabolites' standards (to compare with our bacterial products), required organic solvents - acetonitrile and chloroform. We were careful to work only in an appropriate chemical hood while wearing goggles, a double set of gloves, and a lab coat.  </p>
+       <p>We distinguished between working with bacteria and working with mammalian cells. We had a designated biosafety cabinet for mammalian cells. We also had different equipment for mammalian cells and bacteria such as different lab coats. The work with bacteria and mammalian cells was done in two separate labs to prevent cross-contamination, and different team members worked with each. </p>
+
+              <h2> Waste disposal</h2>
+              <hr>
+              <p> We have separated between three types of waste. </p>
+          <p> •	Biological waste (bacteria/mammalian cells related). This waste was autoclaved before disposal.</p>
+          <p> •	Chemical waste (organic solvents related). This waste was put in chemical hoods and disposed of by Technion's 
+            authorized personnel.</p>
+           <p> •	General waste (no relation to the other two types of waste). </p>
+            <h2> Proposed implementation</h2>
+            <hr>
+            <p> We propose using decursin in products such as shampoo - this will be qualified as a designated cosmetic because it was prepared by a biotechnological <sup>[<a href="#ref3">3</a>]</sup> We reviewed the appropriate existing standard <sup>[<a href="#re35">3</a>]</sup> for that kind of product and were made aware of the requirements for our proposed implementation. We decided to think about the future of our product beyond iGEM. Before its approval by the Israel ministry of health, our product must pass safety tests (such as microbial load, pH, and stability tests). Moreover, we will have to prove our product's efficacy - something we started to do in our POC.   </p>
+                <p> To ensure the safety and purity of our product, we intend to perform an extraction process on our culture. 
+                  The bacteria will be separated by centrifuge and the metabolites will be extracted from the supernatant using
+                   chloroform. The chloroform will be evaporated and the samples will be purified using HPLC according to accepted 
+                   methods<sup>[<a href="#ref3">4</a>]</sup>. This way we ensure that no adjuvants will be present in our products so they will be safe to use.</p>
+<h2>Pampa</h2>
+<hr>
+    <p>Part of our project included an efficacy measurement in the form of the Parallel Artificial Membrane Permeability Assay (PAMPA).  This assay was used to investigate the permeability of decursin through the skin layer.  The safety aspect played a role in two distinct ways.  We pursued the PAMPA assay due to the concern that should we succeed in producing decursin and adding it to a shampoo formulation, it was not clear how deeply the decursin would penetrate.  It is possible that decursin's permeability would be too high, leading to an unwanted impact on other systems in the body, such as spreading systemically throughout the body <sup>[<a href="#ref5">5</a>]</sup> .  This led us to pursue an assay to quantify the permeability of decursin to verify that the permeability would be high enough to penetrate but not too high as to endanger the patients.  </p>
+    <p>Additionally, the typical method for measurements of permeability rates is utilizing live animals or primary cell lines<sup>[<a href="#ref6">6</a>]</sup>.  Our team as a whole chose to investigate alternatives both from a safety perspective and from an ethical perspective.  Therefore, we pursued the PAMPA assay, a cell-less, high throughput, inexpensive, simple, and safe method for mimicking passive diffusion through the scalp layer. To read more about our PAMPA assay you can visit the <a href="{{ url_for('pages', page='proof-of-concept') }}">POC page</a>.</p>
+          </div>
+  </div>
+</div>
+{% endblock %}
+     
+
+

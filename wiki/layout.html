@@ -1,0 +1,56 @@
+
+{% extends "layout-header.html" %}
+
+{% block page_inner_body %}
+
+<!-- Page Content -->
+<div class="container-fluid page-host text-break">
+  <link href="{{ url_for('static', filename='assets/css/toc/bootstrap-toc.min.css') }}" rel="stylesheet">
+
+    <div class="row ">
+      <!-- sidebar, which will move to the top on a small screen -->
+      <div class="col-2 d-none d-lg-block">
+        <div class="text-left sticky-top my-toc">
+          <nav id="toc" data-toggle="toc"></nav>
+        </div>
+      </div>
+      
+      <!-- main content area -->
+      <div class="col-12 col-md-10">
+
+        <div class="page-content">
+          <section id="blog" class="blog">
+            <div class="entries entry-content entry">
+            {% block page_content %}{% endblock %}
+            </div>
+          </section>
+
+          <!-- references -->
+          {% if ref != 'no' %}
+            <section id="blog" class="blog">
+              <div class="entries entry-content entry entry-single">
+                <h2 data-toc-skip>References</h2> 
+                <p class="reftext"> {% block references %}  {% endblock %} </p>
+              </div>
+            </section>         
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  
+  <script src="{{ url_for('static', filename='assets/js/toc/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/toc/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/toc/bootstrap-toc.min.js') }}"></script>
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}
+
+

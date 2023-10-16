@@ -1,0 +1,132 @@
+{% set ref = 'no' %}
+{% extends "layout.html" %}
+  
+{% block title %}Parts{% endblock %}
+{% block lead %} iGEM-IIT-Delhi page for parts.
+
+
+{% endblock %}
+{% block page_content %} 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part Information</title>
+  <style>
+      table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+      }
+      th, td {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
+  </style>
+</head>
+
+<body>
+
+  <h2>Parts</h2>
+  <h3>Composite Parts</h3>
+  
+
+  <table>
+    <tr>
+      <th>Part name (composite)</th>
+      <th>Code</th>
+      <th>Part description</th>
+    </tr>
+    <tr>
+      <td>Inducible dual promoter system</td>
+      <td><a href="http://parts.igem.org/Part:BBa_K4898000">BBa_K4898000</a></td>
+      <td>This contains two strong inducible promoters, Ptac which is induced by IPTG and Ptet which is induced by Doxycycline, this system can have multiple applications from acting as a kill switch to being useful in protein engineering.</td>
+    </tr>
+    <tr>
+      <td>Alasan biosurfactant producing gene AlnA under strong inducible promoter Ptac</td>
+      <td><a href="http://parts.igem.org/Part:BBa_K4898001">BBa_K4898001</a></td>
+      <td>Ptac is induced using IPTG to produce alasan. The specialty of this part is that even a cloning strain like DH5-alpha is able to express the compound with high yields due to the high strength of the promoter. The strain was able to produce a more concentrated solution of the biosurfactant with merely overnight incubation in 37 degrees Celsius than the wild-type strain after 7-day incubation.</td>
+    </tr>
+    <tr>
+      <td>AlnA gene incorporated under T7 promoter</td>
+      <td><a href="http://parts.igem.org/Part:BBa_K4898002">BBa_K4898002</a></td>
+      <td>Alasan cloned under T7 promoter in DH5-alpha for easy blue-white screening of transformed clones.</td>
+    </tr>
+    <tr>
+      <td>Inducible dual promoter system to produce AlnA under Ptac and rhlAB under Ptet</td>
+      <td><a href="http://parts.igem.org/Part:BBa_K4898003">BBa_K4898003</a></td>
+      <td>Alasan and Rhamnolipid are important biosurfactants used in multiple industries. Producing these biosurfactants in a certain composition becomes essential, as producing them in different organisms would require multiple reactors and purification units, increasing production costs. Wild-type strains are also pathogenic. Producing these biosurfactants in one organism allows for cost reduction.</td>
+    </tr>
+  </table>
+
+  <h3>Basic Parts</h3>
+  <table>
+    <tr>
+      <th>Part name (basic)</th>
+      <th>Code</th>
+      <th>Part description</th>
+    </tr>
+    <tr>
+      <td>AlnA</td>
+      <td><a href="http://parts.igem.org/Part:BBa_K398200">BBa_K398200</a></td>
+      <td>An emulsifying protein present in the Alasan emulsifying complex which naturally occurs in Acinetobacter radioresistens. Nucleotide sequence optimized for expression in E.coli.</td>
+    </tr>
+    <tr>
+      <td>rhlAB</td>
+      <td><a href="http://parts.igem.org/Part:BBa_K424018">BBa_K424018</a></td>
+      <td>Rhamnolipids are a class of glycolipids characterized by a rhamnose moiety and a fatty acid tail. While rhamnolipids are produced in a variety of organisms, Pseudomonas aeruginosa is most frequently cited. In Pseudomonas aeruginosa, genes rhlA and rhlB are cooperative to form the complex rhlAB that codes for the enzyme rhamnosyltransferase 1. The enzyme rhamnosyltransferase 1 catalyzes the addition of a (hydroxyalkanoyloxy) alkanoic acid (HAA) fatty acid tail to a rhamnose sugar to produce a mono-rhamnolipid. Similarly, rhlC codes for the enzyme rhamnosyltransferase 2, which catalyzes an addition of another rhamnose moiety to a mono-rhamnolipid to form a di-rhamnolipid.</td>
+    </tr>
+    <tr>
+      <td>Ptet</td>
+      <td><a href="http://parts.igem.org/Part:BBa_R0040">BBa_R0040</a></td>
+      <td>Very tight inducible promoter which is induced by Doxycycline.</td>
+    </tr>
+    <tr>
+      <td>Ptac</td>
+      <td><a href="http://parts.igem.org/Part:BBa_K864400">BBa_K864400</a></td>
+      <td>A strong promoter which works in most of the reported organisms (G+ve, G-ve), hence this could also be used to express in any other organisms.</td>
+    </tr>
+  </table>
+
+  <h2>Inducible dual promoter system to produce AlnA under Ptac and rhlAB under Ptet</h2>
+  <h3>Background</h3>Alasan and Rhamnolipid are important biosurfactants which are used and can be used in multiple industries, production of these biosurfactants in a certain composition hence becomes essential as producing these biosurfactants in different organisms will require multiple reactors and purification units thus increasing the cost of production, the wild type strains are also pathogenic, for producing these biosurfactants in one organism will allow for these costs to come down hence allowing industries to incorporate these more.
+<h3>Uses</h3>
+<ol>
+  <li>This composite part utilises two different inducers to make the biosurfactants in different concentrations governed by the concentration of the inducer put into the broth.</li>
+ <li>The produced biosurfactants are able to chelate metals thus reducing their concentration after treatment. </li>
+<li>The biosurfactants are also used for ex-situ soil remediation.</li>
+</ol>
+
+<h2>Inducible dual promoter system</h2>
+  <h3>Background</h3>
+  <p>This is a inducible dual promoter system incorporated in a vector. First is the Ptac, short for the Tac-Promoter, is a synthetic DNA regulatory element widely used in molecular biology and genetic engineering. It is engineered by merging components of the promoters found in the trp and lac operons, two important genetic systems in bacteria. Ptac is a valuable tool for controlling gene expression in various experimental settings, allowing researchers to precisely modulate the transcription of specific genes. Its versatility makes it a cornerstone in the construction of genetically modified organisms and the production of recombinant proteins, enabling a wide range of biotechnological applications. It can be induced by IPTG. The other is the Ptet, or the Tet-Promoter. This promoter is regulated by the presence or absence of tetracycline or its analogs, providing researchers with a powerful tool for controlling gene transcription. In the absence of tetracycline, the Tet promoter is active, allowing gene expression. When tetracycline or its derivatives are introduced, they bind to a repressor protein, which then prevents the promoter from initiating transcription. This unique on-off switch-like mechanism makes the Tet promoter an invaluable asset in genetic studies, enabling precise regulation of gene expression in a variety of experimental and biotechnological contexts. Overall this provides a powerful tool for wide variety of applications in gene expression.
+  </p>
+<h3>Uses</h3>
+<ol>
+  <li>Expressing a protein: A protein with its chaperone can be cloned under each of the promoters allowing tight control and regulation for folding in protein production. This may be used to prevent metabolic burden on the cells to produce chaperones.
+  </li>
+ <li>When expressing different subunits of a protein: This can have the coding sequences of two subunits under each promoter for tight regulation.</li>
+<li>As a kill switch: For example incorporating the ccdb toxin anti-toxin gene under the Ptet promoter (well controlled using doxycycline) when induced will act as a kill switch for the GMOs.</li>
+<li>In-vivo removal of fusion tags: Under the Ptac promoter gene responsible for protein synthesis with the fusion tag can be incorporated while a protease specific to the fusion tag may be added under the Ptet promoter allowing the tag to be cleaved when desired through induction.</li>
+</ol>
+
+<h2>Alasan biosurfactant producing gene AlnA under strong inducible promoter Ptac</h2>
+  <h3>Background</h3>
+  <p>Ptac is induced using IPTG to produce alasan. The speciality of this part is that even a cloning strain like DH5-alpha is able to express the compound with high yields due the high strength of the promoter. The strain was able to produce a more concentrated solution of the biosurfactant with merely overnight incubation in 37 degree Celsius than the wild type strain after 7 day incubation.  </p>
+<h3>Uses</h3>
+<ol>
+<li>Production of alasan on a industrial scale. </li>
+<li>Can be used in a shuttle vector as Ptac promoter works in most of the reported organisms</li>
+</ol>
+
+
+
+
+
+
+</body>
+
+{% endblock %}
